@@ -9,7 +9,7 @@
   --hero-section-color: #ffffff;
   --success-color: #31d0aa;
   --hero-bg: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
-  --transitions: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-value: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -158,9 +158,8 @@ img {
   display: flex;
 }
 
-.site-nav .link {
-transition: var(--transitions);
-}
+/* .site-nav .link {
+} */
 
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -206,6 +205,7 @@ transition: var(--transitions);
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
+  transition: color var(--transition-value);
 }
 
 /* -------------- ADDRESS SECTION ----------------- */
@@ -230,7 +230,7 @@ transition: var(--transitions);
   line-height: 1.5;
   text-decoration: none;
 
-  transition: var(--transitions);
+  transition: color var(--transition-value);
 }
 .address-link .link:hover,
 .address-link .link:focus {
@@ -286,6 +286,8 @@ transition: var(--transitions);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--hero-section-color);
   letter-spacing: 0.04em;
+
+  transition: background-color var(--transition-value);
 }
 
 .hero-btn:hover,
@@ -383,6 +385,8 @@ transition: var(--transitions);
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+
+  transition: background-color var(--transition-value);
 }
 
 .socials-item-link:is(:hover, :focus) {
@@ -421,6 +425,8 @@ transition: var(--transitions);
   color: var(--subtle-text-color);
   border: 1px solid var(--subtle-text-color);
   border-radius: 4px;
+
+  transition: color var(--transition-value), border-color var(--transition-value);
 }
 
 .customers-link:visited {
@@ -487,6 +493,7 @@ transition: var(--transitions);
 
 .footer-socials .socials-item-link {
   background: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--transition-value);
 }
 
 .footer-socials .socials-item-link:is(:hover, :focus) {
