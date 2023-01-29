@@ -9,6 +9,7 @@
   --hero-section-color: #ffffff;
   --success-color: #31d0aa;
   --hero-bg: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+  --transitions: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -157,6 +158,10 @@ img {
   display: flex;
 }
 
+.site-nav .link {
+transition: var(--transitions);
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--pressed-state-color);
@@ -224,6 +229,8 @@ img {
   font-style: normal;
   line-height: 1.5;
   text-decoration: none;
+
+  transition: var(--transitions);
 }
 .address-link .link:hover,
 .address-link .link:focus {
