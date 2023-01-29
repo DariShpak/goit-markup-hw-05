@@ -164,6 +164,19 @@ img {
 
 .site-nav .link.current {
   color: var(--pressed-state-color);
+  position: relative;
+}
+
+.site-nav .link.current::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  left: 0;
+  bottom: 0px;
+
+  background-color: var(--pressed-state-color);
 }
 
 /* ------------------NAV - LINKS------------- */
