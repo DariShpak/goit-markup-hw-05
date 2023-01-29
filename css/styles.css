@@ -626,6 +626,12 @@ img {
   background-color: rgba(46, 47, 66, 0.4);
 }
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .modal {
   position: absolute;
   top: 50%;
@@ -643,6 +649,8 @@ img {
 }
 
 .modal-close {
+  display: block;
+  margin-left: auto;
   align-items: center;
   width: 24px;
   height: 24px;
